@@ -11,5 +11,4 @@ import "github.com/alexjx/unescape"
 
 w := unescape.Unescaper{Forward: os.Stdout}
 w.Write([]byte("\x1b[31mHello, world!\x1b[0m"))
-w.Close()
 ```
