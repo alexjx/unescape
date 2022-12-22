@@ -9,7 +9,7 @@ It is inspired by [muesli/ansi](https://github.com/muesli/ansi)
 ```go
 import "github.com/alexjx/unescape"
 
-w := unescape.Writer{Forward: os.Stdout}
+w := unescape.Unescaper{Forward: os.Stdout}
 w.Write([]byte("\x1b[31mHello, world!\x1b[0m"))
 w.Close()
 ```
